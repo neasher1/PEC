@@ -1,0 +1,78 @@
+Slide 1: Weather App
+---------------------------------
+Good Morning, everyone.
+My name is [Your Name], and I’m excited to present to you today the Weather App I’ve developed. This app aims to provide accurate and up-to-date weather information, making it easier for users to plan their day.
+
+Let me take you through a quick presentation to show you the key features and how it works.
+
+
+Slide 2: Why Use a Weather App?
+---------------------------------
+We know that Weather impacts our daily lives, so stay prepared for unexpected changes. That's why We make a weather app with accurate weather info like temperature, humidity, and forecasts, so that people can rely on these apps to make decisions. 
+
+
+Slide 3: Weather App Core Features
+---------------------------------
+Let’s look at some key features of the Weather App:
+
+Current Weather Info – It provides up-to-date information on temperature, humidity, wind speed, and weather conditions.
+Hourly Forecast – Users can check the weather for the upcoming hours, giving them a detailed breakdown.
+7-Day Forecast – This feature allows users to see weather predictions for the next week.
+City Search – Users can search for any city and view its weather information instantly.
+
+
+Slide 4: Weather App - Technology Stack:
+---------------------------------
+We used Flutter for building a cross-platform app, integrating it with WeatherAPI for real-time weather data. Dart powers the app, and Material Design ensures a clean and modern user interface.
+
+
+
+Slide 5: Home Page - Display Today Weather
+---------------------------------
+We See the home page is designed to give users a quick overview of today’s weather. It shows essential information like the location, temperature, condition, wind speed, and humidity. The page also includes buttons for viewing the hourly and 7-day forecasts and also search functionality for city weather, making it easy for users to navigate through the app for detailed weather insights.
+
+
+
+Slide 6: Search Box
+---------------------------------
+The app features a search box where users can enter any city name. Once a city is entered, the app fetches the weather data for that city and displays it on a new page, showing details like temperature, condition, wind speed, and humidity, just like the home page.
+
+
+
+Slide 7: Navigation Button - Hourly Forecast
+---------------------------------
+The 'Hourly Forecast' button on the home page allows users to access detailed weather updates, including temperature, wind speed, and more.
+
+
+
+Slide 8: Navigation Button - 7 day Forecast
+---------------------------------
+On the home page, there's a button labeled '7-Day Forecast.' When clicked, it navigates users to a detailed view of the upcoming week’s weather including date, condition, max & minimum temperature.
+
+
+
+Slide 9: Screenshot of Codebase
+---------------------------------
+Here’s a snapshot of the codebase, showcasing how we integrated the WeatherAPI and Flutter to fetch and display weather data.
+
+
+
+
+Slide 10: Key Benefits
+---------------------------------
+This app provides real-time, accurate weather updates, an easy user interface, and seamless navigation for checking current and future weather conditions. It’s easy to use, provides detailed forecasts, and offers a smooth experience.
+
+
+
+
+Slide 10: Future Enhancements- Planned Features
+---------------------------------
+I plan to add more features, such as a radar map for visualizing weather patterns and push notifications for weather alerts
+
+
+
+Slide 11: Thank you
+---------------------------------
+Thank you all for your time and attention. If you have any questions or feedback, feel free to ask!
+
+Thank you.

@@ -1,0 +1,2 @@
+MPI is a message passing interface. MPI allows programs to run on multiple processors. 
+MPI is used in parallel and distributed systems. Message passing is essential in such systems.

@@ -1,0 +1,38 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "assemble",
+            "type": "shell",
+            "command": "nasm",
+            "args": [
+                "-f", "elf64",          // For 64-bit Linux
+                "${file}",              // The current file to assemble
+                "-o", "${fileDirname}/${fileBasenameNoExtension}.o" // Output object file
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Assemble the file"
+        },
+        {
+            "label": "link",
+            "type": "shell",
+            "command": "ld",
+            "args": [
+                "-s",
+                "-o", "${fileDirname}/${fileBasenameNoExtension}", // Output executable
+                "${fileDirname}/${fileBasenameNoExtension}.o"   // Object file from assembler
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "dependsOn": ["assemble"],
+            "problemMatcher": [],
+            "detail": "Link the object file"
+        }
+    ]
+}

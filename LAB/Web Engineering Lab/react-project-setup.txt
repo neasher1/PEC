@@ -1,0 +1,90 @@
+React Project Setup
+------------------
+1. install react
+	npx create-react-app my-project
+	
+	for run the project
+	npm run start
+	
+2. setup with tailwind
+	npm install -D tailwindcss
+	npx tailwindcss init
+	
+	tailwind.config.js
+	/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+
+	index.css
+	@tailwind base;
+	@tailwind components;
+	@tailwind utilities;
+
+3. setup with daisyUI
+	npm i -D daisyui@latest
+	
+	Then add daisyUI to your tailwind.config.js files:
+	module.exports = {
+  //...
+  plugins: [require("daisyui")],
+}
+
+4. install react router dom
+	npm install react-router-dom
+
+5. create layout 
+	create first Navbar and Footer under src/Pages/Shared folder
+	
+	then src/Layout/Layout.js
+	import { Outlet } from 'react-router-dom';
+	<div>
+            <Navbar></Navbar>
+            <Outlet></Outlet>
+            <Footer></Footer>
+    </div>
+		
+	
+6. setup router page and create some Home pages and export router
+	
+	src/Routes/Router.js
+	const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Layout></Layout>,
+    children: [
+      {
+        path: "/",
+        element: <Home></Home>,
+      },
+    ],
+  },
+]);
+
+export default router;
+
+create some Home Pages under src/Pages/Home
+Home.js -> 
+Banner.js
+About.js
+categoris.js
+
+
+7. steup router provider in App.js file
+<RouterProvider router={router}></RouterProvider>
+
+
+VS Code Extensions
+----
+1. Auto Import
+2. Prettier
+3. React Extension Pack
+4. Reactjs Code Snippets
+5. Tailwind CSS Intellisense
+6. vscode-icons
